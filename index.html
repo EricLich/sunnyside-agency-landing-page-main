@@ -18,7 +18,7 @@
 
       <!-- MENU FOR MOBILE (NOT DISPLAYED WHILE ON DESKTOPS) -->
       <img src="./images/icon-hamburger.svg" class="hamburger" alt="hamburger menu">
-      <div class="mobile-menu">
+      <div class="mobile-menu none">
         <ul class="nav-links-mobile">
           <li class="nav-link-mobile">
             <a href="#">About</a>
@@ -180,15 +180,13 @@
       console.log('clicked')
       if(mobileMenu.classList.contains('none')){
         mobileMenu.classList.remove('none')
-        mobileMenu.classList.add('mobile-menu')
+        mobileMenu.classList.add('mobile-menu-active')
       }else{
         mobileMenu.classList.add('none')
-        mobileMenu.classList.remove('mobile-menu')
+        mobileMenu.classList.remove('mobile-menu-active')
         
       }
     });
-
-
   </script>
 </body>
 </html>

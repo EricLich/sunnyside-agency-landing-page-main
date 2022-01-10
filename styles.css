@@ -100,7 +100,7 @@ header {
 	width: 8%;
 }
 
-.mobile-menu {
+.mobile-menu-active {
 	position: absolute;
 	top: 300%;
 	width: 100%;
@@ -111,7 +111,7 @@ header {
 	align-items: center;
 }
 
-.mobile-menu::before {
+.mobile-menu-active::before {
 	content: "";
 	position: absolute;
 	border-color: transparent transparent white transparent; /* for triangle */
@@ -158,7 +158,7 @@ header {
 }
 
 @media (min-width: 768px) {
-	.mobile-menu {
+	.mobile-menu-active {
 		display: none;
 	}
 	header {
