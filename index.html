@@ -173,6 +173,23 @@
     </ul>
   </footer>
 
+  <script>
+    let hambMenu = document.querySelector('.hamburger');
+    let mobileMenu = document.querySelector('.mobile-menu');
+    
+    hambMenu.addEventListener('click', () => {
+      console.log('clicked')
+      if(mobileMenu.classList.contains('none')){
+        mobileMenu.classList.remove('none')
+        mobileMenu.classList.add('mobile-menu')
+      }else{
+        mobileMenu.classList.add('none')
+        mobileMenu.classList.remove('mobile-menu')
+        
+      }
+    });
 
+
+  </script>
 </body>
 </html>

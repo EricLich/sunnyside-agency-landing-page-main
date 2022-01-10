@@ -45,6 +45,10 @@ a {
 	cursor: pointer;
 }
 
+.none {
+	display: none;
+}
+
 .link {
 	text-transform: uppercase;
 	font-family: "Fraunces", serif;
@@ -98,7 +102,7 @@ header {
 	position: absolute;
 	top: 300%;
 	width: 100%;
-	height: 270px;
+	height: 300px;
 	background-color: #fff;
 	display: flex;
 	justify-content: center;
@@ -108,7 +112,7 @@ header {
 .mobile-menu::before {
 	content: "";
 	position: absolute;
-	border-color: transparent transparent white transparent;
+	border-color: transparent transparent white transparent; /* for triangle */
 	border-style: solid;
 	border-width: 0px 30px 30px 30px;
 	height: 0px;
@@ -139,7 +143,6 @@ header {
 }
 
 .nav-last-link-mobile a {
-	width: 100%;
 	background-color: var(--yellow);
 	padding: 15px 30px;
 	border-radius: 25px;
@@ -149,6 +152,7 @@ header {
 	letter-spacing: 0;
 	font-size: 16px;
 	font-weight: 900;
+	margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
